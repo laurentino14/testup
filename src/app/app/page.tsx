@@ -89,7 +89,7 @@ xhr.send();
             const testSend = async (el:any) =>{
                 const body = {
                     name:"Teste - Adicionado pela API 3333" + Math.random(),
-                    image:[{
+                    images:[{
                       src:el.url
                     }]
 
@@ -103,6 +103,7 @@ xhr.send();
                 
               
                 console.log(result,"<------- RESULTADO 1")  
+                console.log(el.url)
             }
     return <main className=" w-screen h-screen ">
         <section className="w-full flex justify-end px-10 my-10"><button
